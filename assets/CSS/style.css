@@ -19,6 +19,9 @@ body {
     color: black;
     border-radius: 0;
     border-bottom: 10px solid black;
+    background:url(../images/helloKitty-background3.jpeg);
+    background-size: cover;
+    background-position: bottom;
   }
   
   .description{
@@ -29,11 +32,16 @@ body {
     text-align: center;
     border-radius: 15px;
   }
+
+  /* #currentDay {
+    padding-top:;
+  } */
   
   .row {
     white-space: pre-wrap;
     height: 80px;
     border-top: 1px solid white;;
+    /* padding-bottom: 20px; */
   }
   
   .hour {
@@ -61,12 +69,34 @@ body {
     border-left: 1px solid black;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: #06AED5;
-    color: white;
+    /* background-color: #06AED5; */
+    /* color: white; */
+    padding: 0;
+    margin: 0;
+    width: 60px;
+    height: 50px;
+    /* text-align: center; */
+    top: 300px;
+    left: 400px;
+    /* position: relative; */
+    border: 3px solid #555;
+    border-radius: 5px;
+    transition-duration: .60s;
+    background:url("../images/helloKitty-icon0.png");
+    background-size: cover;
   }
   
   .saveBtn i:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;
   }
-  
+
+  #hour0800, #hour0900, #hour1000, 
+  #hour1100, #hour1200, #hour1300, 
+  #hour1400, #hour1500, #hour1600, 
+  #hour1700, #hour1800, #hour1900, 
+  #hour2000 {
+    padding-bottom: 20px;
+    border: 3px solid black;
+    border-radius: 5px;
+  }
