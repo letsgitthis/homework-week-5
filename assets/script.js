@@ -9,25 +9,47 @@ $(document).ready(function () {
 
     // specify what in HTML relates to current time
     let currentHour = moment().hour();
-    let time = [
-        hour0800, hour0900, hour1000, hour1100, hour1200, 
-        hour1300, hour1400, hour1500, hour1600, hour1700, 
-        hour1800, hour1900, hour2000];
+    let time = [08, 09, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
     for (let i = 0; i < time.length; i++) {
         if (currentHour < time[i]) {
-            $("#" + time[i]);
-            removeClass("present")
-            addClass("future");
+            $("#" + time[i])
+            .removeClass("present")
+            .addClass("future");
+        }
+
+        else if (currentHour == time[i]) {
+            $("#" + time[i])
+            .addClass("present");
         }
         
         else if (currentHour > time[i]) {
             $("#" + time[i])
-            removeClass("present")
-            addClass("past");
+            .removeClass("present")
+            .addClass("past");
         }
     }
 });
 
 
-// locale storage
-$(".saveBtn").val(localStorage.getItem(""));
+//local storage
+$(".saveBtn").click(function () {
+    let Key = $(this).parent().attr("id");
+    let Value = $(this).siblings(".dayPlan").val();
+    localStorage.setItem(Key, Value);
+})
+
+// document.getElementsByClassName(".dayPlan").innerHTML = localStorage.getItem("id");
+
+$("# .dayPlan").val(localStorage.getItem("#"));
+$("#09 .dayPlan").val(localStorage.getItem("09"));
+$("#10 .dayPlan").val(localStorage.getItem("10"));
+$("#11 .dayPlan").val(localStorage.getItem("11"));
+$("#12 .dayPlan").val(localStorage.getItem("12"));
+$("#13 .dayPlan").val(localStorage.getItem("13"));
+$("#14 .dayPlan").val(localStorage.getItem("14"));
+$("#15 .dayPlan").val(localStorage.getItem("15"));
+$("#16 .dayPlan").val(localStorage.getItem("16"));
+$("#17 .dayPlan").val(localStorage.getItem("17"));
+$("#18 .dayPlan").val(localStorage.getItem("18"));
+$("#19 .dayPlan").val(localStorage.getItem("19"));
+$("#20 .dayPlan").val(localStorage.getItem("20"));

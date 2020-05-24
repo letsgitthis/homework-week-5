@@ -73,8 +73,10 @@ body {
     /* color: white; */
     padding: 0;
     margin: 0;
-    width: 60px;
-    height: 50px;
+    width: 140%;
+    max-width: 60px;
+    height: 60%;
+    max-height: 60px;
     /* text-align: center; */
     top: 300px;
     left: 400px;
@@ -86,17 +88,22 @@ body {
     background-size: cover;
   }
   
+  .dayPlan {
+    padding-bottom: 20px;
+    border: 3px solid black;
+    border-radius: 5px;
+  }
+  
   .saveBtn i:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;
   }
 
-  #hour0800, #hour0900, #hour1000, 
+  /* make save buttons float when hover */
+  /* #hour0800, #hour0900, #hour1000, 
   #hour1100, #hour1200, #hour1300, 
   #hour1400, #hour1500, #hour1600, 
   #hour1700, #hour1800, #hour1900, 
-  #hour2000 {
-    padding-bottom: 20px;
-    border: 3px solid black;
-    border-radius: 5px;
-  }
+  #hour2000:hover {
+    
+  } */
