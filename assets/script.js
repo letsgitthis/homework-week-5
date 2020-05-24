@@ -9,7 +9,7 @@ $(document).ready(function () {
 
     // specify what in HTML relates to current time
     let currentHour = moment().hour();
-    let time = [08, 09, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+    let time = [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
     for (let i = 0; i < time.length; i++) {
         if (currentHour < time[i]) {
             $("#" + time[i])
@@ -38,10 +38,8 @@ $(".saveBtn").click(function () {
     localStorage.setItem(Key, Value);
 })
 
-// document.getElementsByClassName(".dayPlan").innerHTML = localStorage.getItem("id");
-
-$("# .dayPlan").val(localStorage.getItem("#"));
-$("#09 .dayPlan").val(localStorage.getItem("09"));
+$("#8 .dayPlan").val(localStorage.getItem("8"));
+$("#9 .dayPlan").val(localStorage.getItem("9"));
 $("#10 .dayPlan").val(localStorage.getItem("10"));
 $("#11 .dayPlan").val(localStorage.getItem("11"));
 $("#12 .dayPlan").val(localStorage.getItem("12"));
