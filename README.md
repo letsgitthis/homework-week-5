@@ -3,47 +3,20 @@ Work Day Scheduler
 
 # 05 Third-Party APIs: Work Day Scheduler
 
-Create a simple calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+In this assignment, I learned the hard way why we want the script to work before styling the application. 
 
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
+The web application uses moment.js format wrapped in a function to display the time and date live in only 4 lines of code rather than the 22+ lines I was building on my own. Which makes adding time into a page cleaner and simpler than custom building the time yourself.
+However, if you would like a more custom built time, I'm not opposed to the full live clock function build.
+Currently, the application only displays a loose work day set of hours from 8am to 8pm. (In the next update, I would like to make this more custom to add or remove time blocks, move between calendar dates, or change the theme.)
 
-## User Story
+The current time of day will be highlighted red.
+Passed hours will be highlighted gray.
+Future hours will be highlighted green.
 
-```
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
+Click on the time card you wish to store your day play and then click the save button on the left of the card near the time displayed.
+You MUST use the designated save button for that time card in order for the contents of that card to be saved. (In a future update, I may include a "Save All" and "Clear All" button.)
 
-## Acceptance Criteria
 
-```
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-```
+The following image demonstrates the application functionality:
 
-The following animation demonstrates the application functionality:
-
-![day planner demo](./Assets/05-third-party-apis-homework-demo.gif)
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+![day planner screenshot](./assets/images/workDayScheduler-screenshot.png)
